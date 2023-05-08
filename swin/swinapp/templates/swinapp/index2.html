@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-WIN CONSULTING</title>
+    <link rel="stylesheet" href="{% static 'swinapp/styles.css' %}">
+    <script src="{% static 'swinapp/scripts.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <img src="{% static 'swinapp/logo_trans.png' %}" alt="Swin Consulting Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">Statistik</a></li>
+                <li><a href="#">Mina Sidor</a></li>
+                <li><a href="#">Om oss</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Welcome to Swin Consulting!</h1>
+    <p>Enjoy your stay</p>
+</body>
+</html>
