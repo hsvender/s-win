@@ -9,12 +9,15 @@ body{
     color: #ffffff;
 }
 
+.img-logo{
+    width: 200px;
+    padding-top: 10px;
+}
+
 .container{
     width: 100%;
     height: 100vh;
-    background-image: url(back.avif);
-    background-position: center;
-    background-size: cover;
+    background-color: #E8E8E8;
     padding-top: 35px;
     padding-left: 8%; 
     padding-right: 8%;
@@ -32,7 +35,7 @@ nav{
 }
 
 .logo span{
-    color: orangered;
+    color: #FF8F00;
 }
 
 nav ul li{
@@ -48,22 +51,35 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: orangered;
+    color: #FF8F00;
 }
 
-.button1{
+.link1{
     color: #ffffff;
     font-size: 18px;
     margin-right: 15px;
     text-decoration: none;
 }
 
+.link1:hover{
+    color: #FF8F00;
+}
+
 .button2{
-    color: #ffffff;
-    background: #000000;
+    color: #999999;
+    background: #ffffff;
     padding: 9px 25px;
     border-radius: 6px;
     font-size: 18px;
+    font-weight: bold;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.button2:hover{
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
 }
 
 .content{
@@ -80,12 +96,16 @@ nav ul li a:hover{
     line-height: 25px;
 }
 
-.link{
+.description{
+    color: #6E6E6E;
+}
+
+.link2{
     margin-top: 30px;
 }
 
-.link .hire{
-    color: #000000;
+.link2 .see{
+    color: #FF8F00;
     background: #ffffff;
     text-decoration: none;
     padding: 9px 25px;
@@ -94,8 +114,8 @@ nav ul li a:hover{
     transition: 0.4s;
 }
 
-.link .hire:hover{
-    color: #ffffff;
+.link2 .see:hover{
+    color: #FF8F00;
     background: transparent;
-    border: 1px solid #ffffff;
+    border: 1px solid #FF8F00;
 }
