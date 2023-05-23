@@ -6,7 +6,7 @@
 }
 
 body{
-    color: #6e6e6e;
+    color: #ffffff;
 }
 
 .logo-img{
@@ -183,3 +183,10 @@ nav ul li a:hover{
   #github {
     fill: #333;
   }
+
+footer {
+    position: fixed;
+    padding-left: 1220px;
+    bottom: -5px;
+    width: 100%;
+}
