@@ -13,7 +13,7 @@ softskills_competencies = ['anpassningsförmåga', 'kommunikation', 'tidsplaneri
                            'beslutsfattande', 'nätverkande']
 
 # Define stopwords
-stop_words = set(stopwords.words('english')) 
+stop_words = set(stopwords.words('english'))
 
 # Initialize a Counter object
 competency_count = Counter()
