@@ -62,6 +62,13 @@ ol.gradient-list > li {
   position: relative;
 }
 
+#gradient-parent .gradient-list-item {
+  font-family: Arial, sans-serif;
+  color: #333;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 ol.gradient-list > li::before,
 ol.gradient-list > li::after {
   background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);

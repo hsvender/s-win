@@ -96,6 +96,28 @@ nav ul li a:hover{
     line-height: 25px;
 }
 
+.container {
+    position: relative; /* Add this to make the container a positioning context */
+  }
+  
+.background-img {
+    position: relative;
+    top: -50px;
+    left: -120px;
+    width: 145%;
+    height: 100%;
+    z-index: -1; /* Ensure the background image is behind the content */
+    background-size: cover;
+    background-position: center;
+}
+  
+.content,
+.link2 {
+    position: relative; /* Add this to make the content and link2 sections positioned relative to the container */
+    z-index: 1; /* Ensure the content and link2 sections appear above the background image */
+  }
+  
+
 .description{
     color: #6E6E6E;
 }
@@ -190,6 +212,7 @@ footer {
     bottom: -5px;
     width: 100%;
 }
+<<<<<<< HEAD
 
 #gradient-parent .gradient-list-item {
     font-family: Arial, sans-serif;
@@ -198,3 +221,5 @@ footer {
     text-overflow: ellipsis;
 }
 
+=======
+>>>>>>> a0770753b4615e60e4e0d540acb3596881bdf80a
