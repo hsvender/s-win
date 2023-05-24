@@ -109,6 +109,8 @@ nav ul li a:hover{
     z-index: -1; /* Ensure the background image is behind the content */
     background-size: cover;
     background-position: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
   
 .content,
@@ -212,14 +214,3 @@ footer {
     bottom: -5px;
     width: 100%;
 }
-<<<<<<< HEAD
-
-#gradient-parent .gradient-list-item {
-    font-family: Arial, sans-serif;
-    color: #333;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-=======
->>>>>>> a0770753b4615e60e4e0d540acb3596881bdf80a

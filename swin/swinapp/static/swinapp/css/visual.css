@@ -84,8 +84,8 @@ div::-webkit-scrollbar{
   }
 
   #button1, #button2 {
-    font-family: "Space Mono", monospace;
-    font-size: 12px;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
