@@ -16,10 +16,10 @@
             <img src="{% static 'swinapp/img/logo.png'%}" alt="S-win logo" class="logo-img">
             <h2 class="logo">S-WIN <span>CONSULTING.</span></h2>
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a1 href="visual">Data Visualization</a1></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="/swinapp/">Home</a></li>
+                <li><a1 href="/swinapp/visual">Data Visualization</a1></li>
+                <li><a href="/swinapp/about">About Us</a></li>
+                <li><a href="/swinapp/contact">Contact</a></li>
             </ul>
             <div class="buttons">
                 <a href="#" class="link1">Log In</a>
@@ -32,7 +32,9 @@
         <div class="description">
         <p>This is the Data Visualization page. <i class="arrow down"></i></p>
         </div>
-        <div class="square"></div>
+        <canvas id="chart"></canvas>
+        <!-- <div class="square"> -->
+        </div>
     </div>
     <footer>
         <nav>

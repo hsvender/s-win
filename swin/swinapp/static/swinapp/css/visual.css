@@ -28,3 +28,8 @@ nav ul li a1{
     padding: 30px 25px;
     border-radius: 6px;
 }
+
+#chart {
+    max-width: 100%;
+    margin: 20px auto;
+}
