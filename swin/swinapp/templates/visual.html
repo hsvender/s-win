@@ -8,6 +8,7 @@
     <title>S-WIN CONSULTING</title>
     <link rel="stylesheet" href="{% static 'swinapp/css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'swinapp/css/visual.css' %}">
+    <link rel="stylesheet" href="{% static 'swinapp/css/toplist.css' %}">
     <script src="{% static 'swinapp/js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -30,10 +31,10 @@
         <div class="competencies-container">
             <button id="button1">Show Competency Data</button>
             <button id="button2">Show Softskills Data</button>
-            <div class="titles">
-              <h3>Title</h3>
-              <h3>Count</h3>
-              <canvas id="myChart"></canvas>
+            
+            <div class="flex-container">
+                <canvas id="myChart"></canvas>
+                <div id="jsonList" style="margin-left: 100px;"></div>
             </div>
             <!--<div class="competencies-list">-->
               <!-- Competencies will be added here -->
@@ -61,6 +62,7 @@
       </footer>
       <script src="{% static 'swinapp/js/circleChart.js' %}"></script>
       <script src="{% static 'swinapp/js/showStats.js' %}"></script>
+      <script src="{% static 'swinapp/js/jsonList.js' %}"></script>
 
 </body>
 </html>
