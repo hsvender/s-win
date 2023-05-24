@@ -14,4 +14,12 @@ nav ul li a1 {
     padding: 30px 25px;
     border-radius: 6px;
   }
+
+  .box {
+    height: 50px;
+    width: 100px;
+    border: 1px solid red;
+    background-color: rgb(255,0,0,0.5);
+
+  }
   

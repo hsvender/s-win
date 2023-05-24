@@ -1,4 +1,9 @@
 from django.shortcuts import render
+import json
+from django.http import JsonResponse
+from django.conf import settings
+from django.views.decorators.cache import never_cache
+import os
 
 def home(request):
     return render(request, 'index.html')
@@ -11,3 +16,17 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+@never_cache
+def prog_competencies(request):
+    json_path = os.path.join(settings.STATIC_ROOT, 'swinapp/data/comp_prog_count.json')
+    with open(json_path, 'r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return JsonResponse(data)
+
+def soft_competencies(request):
+    json_path = os.path.join(settings.STATIC_ROOT, 'swinapp/data/comp_soft_count.json')
+    with open(json_path, 'r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return JsonResponse(data)
+

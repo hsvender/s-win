@@ -19,17 +19,86 @@ nav ul li a1{
     transition: 0.4s;
 }
 
-.square {
-    margin-top: 10px;
-    line-height: 25px;
-    height: 500px;
-    width: 1210px;
-    background-color: #ffffff;
-    padding: 30px 25px;
-    border-radius: 6px;
+.competencies-container {
+    background-color: #E8E8E8;
+    display: flex;
+    flex-direction: column;
+    width: 400px; /* Adjust as needed */
+    margin: 1em;
+    box-shadow: 0 0 10px solid black;
+    border-radius: 3px;
+  }
+  
+  .titles {
+    display: flex;
+    justify-content:space-between;
+    color:white;
+    padding: 1em;
+  }
+  
+  .competencies-list {
+    max-height: 400px; /* Adjust as needed */
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .competencies-list::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px; /* adjust as needed */
+    background: linear-gradient(to bottom, transparent, #FF8F00); /* match your background color */
+}
+  
+  
+div::-webkit-scrollbar{
+    display:none;
 }
 
-#chart {
+.competency {
+    font-size: 1rem;
+    background-color: #FF8F00;
+    padding: 10px;
+    margin: 5px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .competencies-list > .competency {
+    width: 400px;
+  }
+  
+  
+
+  .competency p {
+    font-family: "Space Mono", monospace;
+  }
+
+  #button1, #button2 {
+    font-family: "Space Mono", monospace;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 400px;
+    transition: 0.3s;
+  }
+
+  #button1:hover, #button2:hover {
+    background-color: #FF8F00;
+    transition: 0.3s;
+  }
+
+  #myChart {
     max-width: 100%;
     margin: 20px auto;
-}
+    position: relative;
+  }
+
+  
+  
