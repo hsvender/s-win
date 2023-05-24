@@ -65,7 +65,7 @@ nav ul li a:hover{
     color: #FF8F00;
 }
 
-.button2{
+.button3{
     color: #999999;
     background: #ffffff;
     padding: 9px 25px;
@@ -190,4 +190,11 @@ footer {
     bottom: -5px;
     width: 100%;
 }
-  
+
+#gradient-parent .gradient-list-item {
+    font-family: Arial, sans-serif;
+    color: #333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+

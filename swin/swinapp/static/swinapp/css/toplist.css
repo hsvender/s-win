@@ -57,8 +57,8 @@ ol.gradient-list > li {
   counter-increment: gradient-counter;
   min-height: auto;
   height: 50px;
-  width: 200px;
-  padding: 10px 10px 10px 50px;
+  width: 250px;
+  padding: 10px 10px 10px 25%;
   position: relative;
 }
 
@@ -136,3 +136,4 @@ ol.gradient-list > li:nth-child(10n+11):before {
 ol.gradient-list > li + li {
   margin-top: 0;
 }
+

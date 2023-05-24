@@ -1,11 +1,11 @@
-async function getJsonData() {
-    const response = await fetch('http://127.0.0.1:8000/swinapp/prog_competencies');
+async function getJsonData(url) {
+    const response = await fetch(url);
     const data = await response.json();
     return data;
 }
 
-async function fillList() {
-    const data = await getJsonData();
+async function fillList(url) {
+    const data = await getJsonData(url);
     const list = document.getElementById('jsonList');
     let output = '<ol class="gradient-list">';
 
@@ -20,6 +20,5 @@ async function fillList() {
     list.innerHTML = output;
 }
 
-
-
-window.addEventListener('load', fillList);
+// Call fillList initially for the first URL if you want one of them to load by default
+//fillList('http://127.0.0.1:8000/swinapp/prog_competencies');
