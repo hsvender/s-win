@@ -1,40 +1,32 @@
-const data = {
-    labels: [
-      'Red',
-      'Blue',
-      'Yellow'
-    ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
-      ],
-      hoverOffset: 4
-    }]
-};
+// Fetch the data from the server
+fetch('http://127.0.0.1:8000/swinapp/prog_competencies')
+  .then(response => response.json())
+  .then(data => {
+    // Sort competencies by value and get top 10
+    let sortedData = Object.entries(data).sort((a, b) => b[1] - a[1]).slice(0, 5);
 
-const config = {
-    type: 'doughnut',
-    data: data,
-    borderAlign: 'left',
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        },
-        title: {
-          display: true,
-          text: 'My Doughnut Chart'
-        }
-      }
-    },
-};
+    // Prepare labels and data arrays
+    let labels = sortedData.map(item => item[0]);
+    let datasetData = sortedData.map(item => item[1]);
 
-const myChart = new Chart(
-    document.getElementById('myChart'),
-    config
-);
+    // Update chart configuration
+    const chartData = {
+      labels: labels,
+      datasets: [{
+        label: 'Competency Dataset',
+        data: datasetData,
+        // Add rest of the properties like backgroundColor, etc.
+      }]
+    };
+
+    const config = {
+      type: 'doughnut',
+      data: chartData,
+      // ...rest of the config
+    };
+
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  });
