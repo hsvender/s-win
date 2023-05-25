@@ -74,7 +74,7 @@ div::-webkit-scrollbar{
 
   #button1, #button2 {
     font-family: 'Arial', sans-serif;
-    color: #ffffff;
+    color: #6e6e6e;
     background-color: transparent;
     font-size: 14px;
     display: flex;
@@ -91,6 +91,8 @@ div::-webkit-scrollbar{
     transition: 0.4s;
     color: #FF8F00;
   }
+
+  
 
   #myChart {
     max-width: 100%;

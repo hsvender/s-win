@@ -25,7 +25,7 @@ body {
 body {
   background-color: #fafafa;
   color: #6E6E6E;
-  font-family: "Raleway", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 main {
@@ -74,10 +74,10 @@ ol.gradient-list > li {
 
 ol.gradient-list > li::before,
 ol.gradient-list > li::after {
-  background: linear-gradient(135deg, #83e4e2 0%, #a2ed56 100%);
+  background: linear-gradient(135deg,rgba(242,144,58,1) 0%, rgba(255, 166, 11, 1) 100%);
   border-radius: 1rem;
   content: "";
-  height: 3rem;
+  height: 2.5rem;
   left: -1rem;
   overflow: hidden;
   position: absolute;
@@ -88,11 +88,11 @@ ol.gradient-list > li::after {
 ol.gradient-list > li::before {
   align-items: flex-end;
   content: counter(gradient-counter);
-  color: #1d1f20;
+  color: #ffffff;
   display: flex;
-  font: 900 1.5em/1 "Montserrat";
+  font: 900 1.25em/1 "montserrat";
   justify-content: flex-end;
-  padding: 0.125em 0.25em;
+  padding: 12px 10px;
   z-index: 1;
 }
 

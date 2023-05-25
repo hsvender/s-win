@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="{% static 'swinapp/css/toplist.css' %}">
     <script src="{% static 'swinapp/js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
 <body>
     <div class="container">
@@ -18,52 +19,28 @@
             <img src="{% static 'swinapp/img/logo.png'%}" alt="S-win logo" class="logo-img">
             <h2 class="logo">S-WIN <span>CONSULTING.</span></h2>
             <ul>
-                <li><a href="/swinapp/">Home</a></li>
-                <li><a1 href="/swinapp/visual">Data Visualization</a1></li>
-                <li><a href="/swinapp/contact">About Us</a></li>
+                <li><a href="/swinapp/">Hem</a></li>
+                <li><a1 href="/swinapp/visual">Datavisualisering</a1></li>
+                <li><a href="/swinapp/contact">Om oss</a></li>
             </ul>
             <div class="buttons">
-                <a href="#" class="link1">Log In</a>
-                <a href="#" class="button3">Register</a>
+                <a href="#" class="link1">Logga in</a>
+                <a href="#" class="button3">Registrera</a>
             </div>
         </nav>
+        <br>
+        <h1 class="titleVisual">Datavisualisering</h1>
+            <div class="descriptionVisual">Här kan du som programkoordinator granska vilka kompetenser som har hög efterfrågan på arbetsmarknaden för att hjälpa universitetet designa sin utbildning så att studenter är redo för en karriär inom IT. Kompetenserna sorteras baserat på de soft skills samt hard skills som efterfrågas av arbetsgivare. Många arbetsplatser söker personer med båda typerna av förmågor, vilket gör det viktigt att studenter utbildas i båda under sin utbildning.
+            </div>
         <div class="competencies-container">
-            <br>
-            <br>
-            <h3 class="titleVisual">Visualization Title</h3>
-            <button id="button1">Show Programming Languages Demand</button>
-            <button id="button2">Show Softskills Demand</button>
+            <button id="button1">》Visa kompetensbehov för programmeringsspråk</button>
+            <button id="button2">▷ Visa kompetensbehov för soft skills</button>
             <div class="flex-container">
                 <canvas id="myChart"></canvas>
-                <!-- Adjusted "gradient-list" to be a div with the id "gradient-parent" -->
                 <div id="gradient-parent"></div>
             </div>
         </div>
     </div>
-    <footer>
-        <nav>
-          <ul>
-            <li>
-            <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
-            <div class='social-links'>
-                <div class='social-btn flex-center' id="twitter">
-                <!-- SVG icons -->
-                <span>@S-win</span>
-                </div>
-            
-                <div class='social-btn flex-center' id="linkedin">
-                <!-- SVG icons -->
-                <span>S-win</span>
-                </div>
-
-                <div class='social-btn flex-center' id="github">
-                <!-- SVG icons -->
-                <span>S-win</span>
-                </div>
-            </li>
-          </ul>
-        </nav>
-      </footer>
       <script src="{% static 'swinapp/js/circleChart.js' %}"></script>
 </body>
 </html>
