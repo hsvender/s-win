@@ -68,26 +68,28 @@ div::-webkit-scrollbar{
     width: 400px;
   }
   
-  
-
   .competency p {
     font-family: "Space Mono", monospace;
   }
 
   #button1, #button2 {
     font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: transparent;
     font-size: 14px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     height: 30px;
     width: 400px;
     transition: 0.3s;
+    border: none;
   }
 
   #button1:hover, #button2:hover {
-    background-color: #FF8F00;
-    transition: 0.3s;
+    background-color: transparent;
+    transition: 0.4s;
+    color: #FF8F00;
   }
 
   #myChart {
