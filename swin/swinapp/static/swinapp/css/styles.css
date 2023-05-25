@@ -21,6 +21,7 @@ body{
     padding-top: 35px;
     padding-left: 8%; 
     padding-right: 8%;
+    overflow: hidden;
 }
 
 nav{
@@ -148,6 +149,7 @@ nav ul li a:hover{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 5;
   }
   
   body, .flex-center {

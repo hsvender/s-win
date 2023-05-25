@@ -68,17 +68,20 @@ async function updateList(url) {
 
   parentElement.innerHTML = '';  // Clear the previous gradient-list if it exists
 
-  let sortedData = Object.entries(data).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 10);
+  let sortedData = Object.entries(data).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0])).slice(0, 12);
 
   let i = 1;
   for (let item of sortedData) {
     let listItem = document.createElement('li');
     listItem.classList.add('gradient-list-item');
     listItem.style.order = i;
-    listItem.textContent = item[0] + ': ' + item[1];
+    
+    listItem.innerHTML = '<strong>' + item[0] + '</strong><br/>' + 'förekommer ' + item[1] + " gånger";
+    
     listElement.appendChild(listItem);
     i++;
   }
+  
   
   // Append the newly created list to the parent element
   parentElement.appendChild(listElement);
