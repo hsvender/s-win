@@ -16,7 +16,7 @@ body{
 }
 
 .descriptionVisual{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .container{
@@ -58,6 +58,8 @@ nav ul li a{
 
 nav ul li a:hover{
     color: #FF8F00;
+    text-decoration: none;
+    transition: 0.4s;
 }
 
 .link1{
