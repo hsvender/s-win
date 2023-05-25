@@ -4,15 +4,6 @@
     line-height: 25px;
 }
 
-.arrow {
-    border: solid #6E6E6E;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
 nav ul li a1{
     color: #FF8F00;
     text-decoration: none;
