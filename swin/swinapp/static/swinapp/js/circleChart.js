@@ -76,11 +76,12 @@ async function updateList(url) {
     listItem.classList.add('gradient-list-item');
     listItem.style.order = i;
     
-    listItem.innerHTML = '<strong>' + item[0] + '</strong><br/>' + 'förekommer ' + item[1] + " gånger";
+    listItem.innerHTML = '<strong>' + item[0].charAt(0).toUpperCase() + item[0].slice(1) + '</strong><br/>' + 'förekommer ' + item[1] + " gånger";
     
     listElement.appendChild(listItem);
     i++;
-  }
+}
+
   
   
   // Append the newly created list to the parent element
