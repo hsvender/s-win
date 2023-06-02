@@ -8,8 +8,6 @@
     <title>S-WIN CONSULTING</title>
     <link rel="stylesheet" href="{% static 'swinapp/css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'swinapp/css/visual.css' %}">
-    <link rel="stylesheet" href="{% static 'swinapp/css/toplist.css' %}">
-    <script src="{% static 'swinapp/js/script.js' %}"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 </head>
@@ -31,15 +29,34 @@
         <h1 class="titleVisual">Datavisualisering</h1>
             <div class="descriptionVisual">Här kan du som programkoordinator granska vilka kompetenser som har hög efterfrågan på arbetsmarknaden för att hjälpa universitetet designa sin utbildning så att studenter är redo för en karriär inom IT. Kompetenserna sorteras baserat på de soft skills samt hard skills som efterfrågas av arbetsgivare. Många arbetsplatser söker personer med båda typerna av förmågor, vilket gör det viktigt att studenter utbildas i båda under sin utbildning.
             </div>
-        <div class="competencies-container">
-            <button id="button1">》Visa kompetensbehov för programmeringsspråk</button>
-            <button id="button2">》Visa kompetensbehov för soft skills</button>
-            <div class="flex-container">
-                <canvas id="myChart"></canvas>
-                <div id="gradient-parent"></div>
+            <div class="competencies-container">
+                <div class="flex-container">
+
+                    <div>
+                        <table id="dataTable" class="display">
+                            <thead>
+                                <tr>
+                                    <th>Skill</th>
+                                    <th>Count</th>
+                                    <th>Category</th>
+                                    <th>Highlight</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <canvas id="lineChart"></canvas>
+                    <canvas id="myChart"></canvas>
+                </div>
+                
             </div>
-        </div>
-    </div>
-      <script src="{% static 'swinapp/js/circleChart.js' %}"></script>
-</body>
+            <!-- Include jQuery and DataTables JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+            <script src="{% static 'swinapp/js/table.js' %}"></script>
+            <script src="https://cdn.datatables.net/rowgroup/1.1.2/js/dataTables.rowGroup.min.js"></script>
+            <script src="{% static 'swinapp/js/lineChart.js' %}"></script>
+            <script src="https://cdn.jsdelivr.net/npm/simple-statistics@7.5.0/dist/simple-statistics.min.js"></script>
+            <script src="{% static 'swinapp/js/myChart.js' %}"></script>
+
+
 </html>

@@ -104,6 +104,35 @@ div::-webkit-scrollbar{
     justify-content: space-between;
 }
 
+/* File: swinapp/css/visual.css */
+
+/* ... Previous CSS ... */
+
+/* Styles for the DataTable */
+#dataTable_wrapper {
+  padding: 20px;
+}
+
+.dataTables_filter {
+  float: right;
+}
+
+.dataTables_length {
+  float: left;
+}
+
+.dataTables_info {
+  clear: both;
+}
+
+/* Styles for the Highlight Checkbox */
+input.highlight {
+  margin: 0 auto;
+  display: block;
+}
+/* ... Previous CSS ... */
+
+
 
 
 

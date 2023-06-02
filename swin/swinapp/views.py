@@ -30,3 +30,9 @@ def soft_competencies(request):
         data = json.load(json_file)
     return JsonResponse(data)
 
+def all_competencies(request):
+    json_path = os.path.join(settings.STATIC_ROOT, 'swinapp/data/year_skill_counts_1.json')
+    with open(json_path, 'r', encoding='utf-8') as json_file:
+        data = json.load(json_file)
+    return JsonResponse(data, safe=False)
+
