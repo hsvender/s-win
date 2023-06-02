@@ -3,7 +3,6 @@
 This is a documentation over the progress of the s-win consulting analytical platform for student coordinators.
 -----------------------------------------------------------------------------------------------------------------
 
-This is just a test to commit to github.
-
-This is a test for the branch.
+The application is built using Django. To use the application you must have django installed, locate the folder with manage.py and run a localserver
+'python manage.py runserver'.
 
